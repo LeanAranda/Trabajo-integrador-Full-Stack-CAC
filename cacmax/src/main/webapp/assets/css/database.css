@@ -1,0 +1,122 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+body {
+    color: white;
+    /*
+    background-color: #191919;
+    */
+    background-color: #1f0329;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*background-color: #2b2727; opacity: 85%;*/
+    background-color: #131313ce;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section{
+    margin: 2em;
+    gap: 1em;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header .logo{
+    width: 300px;
+}
+
+footer {
+    background-color: #131313ce;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer section{
+    text-align: center;
+    margin: 2em;
+}
+
+table {
+	width: 80%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th,
+td {
+	padding: 10px;
+	border: 1px solid rgb(66, 57, 94);
+	background-color: rgb(23, 23, 23);
+	text-align: left;
+}
+
+th {
+	background-color: rgb(66, 57, 94);
+	color: #fff;
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 5% 0;
+}
+
+.tabla h1{
+    align-self: center;
+}
+
+@media only screen and (max-width: 740px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header section {
+        margin: 1em;
+    }
+    
+    .tabla{
+        overflow: scroll;
+        width: 100%;
+        align-items: start;
+    }
+
+    table{
+        width: auto;
+    }
+}

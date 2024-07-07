@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="assets/css/style_iniciar_sesion.css">
+    <link rel="icon" href="assets/ico/user-solid.svg">
+    <link rel="stylesheet" href="assets/js/validacion.js">
+</head>
+<body>
+
+    <div class="container">
+        <form action="#">
+            <h1>Iniciar Sesión</h1>
+
+            <div class="input-box">
+                <input type="text" name="mail" id="mail" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="psw" id="psw" placeholder="Contraseña" required>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Recordar Usuario</label>
+                <a href="#">Olvidaste la contraseña?</a>
+            </div>
+
+            <button type="submit" onclick="validar()" class="btn"><a href="#">Iniciar Sesión</button></a>
+                
+            <div class="register-link">
+                <p>No tienes una cuenta? <a href="#">Crear Cuenta</a></p>
+                <a href="index.html">Volver a inicio</a>
+            </div>
+
+            
+        </form>
+    </div>
+    <script src="assets/js/validacion.js"></script>
+</body>
+</html>

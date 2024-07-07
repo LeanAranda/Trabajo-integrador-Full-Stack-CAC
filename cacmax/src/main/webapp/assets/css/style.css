@@ -1,0 +1,231 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+body {
+    color: white;
+    /*
+    background-color: #191919;
+    */
+    background-color: #1f0329;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*background-color: #2b2727; opacity: 85%;*/
+    background-color: #131313ce;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section{
+    margin: 2em;
+    gap: 1em;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header .logo{
+    width: 300px;
+}
+
+footer {
+    background-color: #131313ce;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer section{
+    text-align: center;
+    margin: 2em;
+}
+
+.principal{
+    background-image: url(../img/StarWars/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.princ-content{
+    
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 18%;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*
+    backdrop-filter: blur(4px);
+    */
+    background: linear-gradient(rgba(0, 0, 0, 0.150), #1f0329);
+}
+
+.princ-content h1{
+    font-size: 5vw;
+    font-weight: 300;
+}
+
+.star{
+    color: #FFD43B;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.buttons a{
+    background-color: #7809A4;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.busqueda{
+    
+    background: linear-gradient(#1f0329, #131313 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+}
+
+.busqueda h1{
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.search-bar{
+    border: 3px #7809A4 solid;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+
+    padding: 1% 3%;
+    padding-left: 1%;
+    
+}
+
+
+
+.bar{
+    width: 80vw;
+    height: 45px;
+    padding-left: 20px;
+
+    font-size: x-large;
+    color: black;
+
+    border: none;
+    border-radius: 100px;
+    
+    
+}
+
+input.bar:focus {
+    outline-width: 0;
+}
+
+.movies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    background-color: #131313;
+}
+
+.movies h2{
+    font-size: xx-large;
+}
+
+.card{
+    width: 250px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card img{
+    width: 100%;
+}
+
+.title{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 740px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header section {
+        margin: 1em;
+    }
+    
+    .busqueda h1{
+        font-size: x-large;
+    }
+
+    .bar{
+        font-size: large;
+    }
+    
+    .card{
+        width: 150px;
+    }
+
+    .title{
+        font-size: x-large;
+    }
+}

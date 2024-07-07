@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-color: #191919;
+    /* 
+    background-image: url(../img/StarWars/1115520.jpg);
+    */
+    
+    background-image: url(../img/StarWars/wallpaper.jpg);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    /*background-color: #2b2727; opacity: 85%;*/
+    background-color: #131313ce;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header section {
+    margin: 2em;
+    gap: 1em;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header .logo {
+    width: 300px;
+}
+
+main {
+    
+    background-color: #0c0c0c5b;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.content {
+    color: rgb(194, 194, 194);
+    /*
+    background-color: #00000083;
+    */
+    background-color: #000000cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    margin: 5%;
+    padding: 3%;
+    gap: 20px;
+}
+
+.movie_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trailer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.info {
+    padding: 2%
+}
+
+#logo {
+    width: 50%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown_content {
+    display: none;
+}
+
+.dropdown:hover .dropdown_content {
+    position: absolute;
+    display: block;
+    margin-left: -20px;
+    background-color: #131313ce;
+    width: max-content;
+}
+
+.dropdown_content ol {
+    padding: 5%;
+}
+
+.dropdown_content a :hover {
+    background-color: rgb(62, 65, 65);
+}
+
+h3 {
+    text-shadow: #000000;
+}
+
+footer {
+    background-color: #131313ce;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer section {
+
+    margin: 2em;
+}
+
+@media only screen and (max-width: 740px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header section {
+        margin: 1em;
+    }
+
+    .content{
+        margin: 10% 0%;
+        border-radius: 0;
+    }
+}
