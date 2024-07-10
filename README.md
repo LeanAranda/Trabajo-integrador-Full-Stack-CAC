@@ -1,4 +1,4 @@
-# Trabajo-integrador-Front-End
+# Trabajo-integrador-Back-End
 Trabajo práctico que simula un sitio web de streaming de películas y series
 El proyecto consta de 4 páginas (Inicio, iniciar sesión, película y base de datos) y se puede navegar entre ellas.
 
