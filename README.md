@@ -1,5 +1,6 @@
 # Trabajo-integrador-Full-Stack-CAC
 Trabajo práctico que simula un sitio web de streaming de películas y series. 
+Desarrollado en java bajo el patrón MVC.
 
 El proyecto consta de 4 páginas:
 
